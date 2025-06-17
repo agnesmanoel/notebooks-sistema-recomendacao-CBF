@@ -72,7 +72,7 @@ recommender = NearestNeighbors(metric='cosine')
 recommender.fit(genres_encoded)
 
 
-dfUser = ratings[ratings['userId'] == 3] 
+dfUser = ratings[ratings['userId'] == 611] 
 #print(dfUser.shape)
 #print(dfUser.head())
 
@@ -92,7 +92,7 @@ vetor_usuario = vetor_usuario/genres.shape[0]
 
 recommender = NearestNeighbors()
 recommender.fit(genres_encoded)
-vizinhos = recommender.kneighbors(vetor_usuario.reshape(1,-1),return_distance=False)
+vizinhos = recommender.kneighbors(vetor_usuario.reshape(1,-1),n_neighbors=15, return_distance=False)
 titulosVizinhos = movies.iloc[vizinhos[0]]['title']
 
 print(titulosVizinhos)
