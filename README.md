@@ -1,4 +1,4 @@
-# 📽️ Estudo da aplicação do algoritmo Content-Based Learning - Sistema de recomendação :)
+#  Estudo da aplicação do algoritmo Content-Based Learning - Sistema de recomendação :)
 
 O objetivo deste projeto é documentar meu aprendizado durante os estudos sobre sistemas de recomendação. 
 
